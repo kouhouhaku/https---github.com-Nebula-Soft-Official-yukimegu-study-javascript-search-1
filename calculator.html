@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>四则运算器</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="calculator.js" defer></script>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Input number</legend>
+      <input type="number" id="first" placeholder="first number" />
+      <input type="number" id="second" placeholder="second number" />
+    </fieldset>
+
+    <fieldset class="operators">
+      <legend>Select Operator</legend>
+
+      <span>
+        <input type="radio" name="operators" id="add" value="add" checked />
+        <label for="add">+</label>
+      </span>
+
+      <span>
+        <input type="radio" name="operators" id="subtract" value="subtract" />
+        <label for="subtract">-</label>
+      </span>
+
+      <span>
+        <input type="radio" name="operators" id="multiply" value="multiply" />
+        <label for="multiply">*</label>
+      </span>
+
+      <span>
+        <input type="radio" name="operators" id="divide" value="divide" />
+        <label for="divide">/</label>
+      </span>
+    </fieldset>
+
+    <fieldset>
+      <legend>submit</legend>
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+    </fieldset>
+
+    <pre id="result">结果： </pre>
+  </form>
+
+  <style>
+    body {
+      background: #eee;
+    }
+
+    .operators {
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+</body>
+
+</html>
