@@ -22,12 +22,8 @@
     }
   }
 
-  function clickSubmit() {
-    result.innerHTML = `结果：<br> ${calculate()}`
-  }
-
-  submit.addEventListener('click', function (e) {
+  submit.addEventListener('click', (e) => {
     e.preventDefault()
+    result.innerHTML = `结果：<br> ${calculate()}`
   })
-  submit.addEventListener('click', clickSubmit)
 })()
